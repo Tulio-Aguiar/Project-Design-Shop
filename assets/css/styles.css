@@ -1,0 +1,415 @@
+/* Assets:
+font-family: "Karla", sans-serif; 
+Color: #323A45, #848484 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+/* Hard set */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Seting */
+body {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Hero Styling */
+#hero {
+  height: 7vh;
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .logo {
+  font-size: 1rem;
+  text-transform: uppercase;
+  word-spacing: 0.3em;
+  
+}
+
+#logo:hover {
+  color: #6047ee;
+}
+
+/* Nav & Header */
+
+#nav {
+  width: 40%;
+  text-align: right;
+}
+
+#hero nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#hero nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #323a45;
+  font-weight: bold;
+  padding-left: 5vw;
+  transition: 0.3s;
+}
+
+#hero nav ul li a:hover {
+  color: #6047ee;
+}
+
+/* Main Content */
+
+.backpack0ne {
+  grid-column: 1 /-1;
+}
+
+.itemID {
+  display: flex;
+  justify-content: space-between;
+}
+
+.madeBy {
+  color: #848484;
+  margin-top: 0.2vh;
+}
+
+figure img {
+  width: 100%;
+  transition: 1s;
+}
+
+figcaption {
+  padding-top: 2vh;
+}
+
+figure img:hover {
+  opacity: 0.6;
+}
+
+#items {
+  width: 90%;
+  justify-content: center;
+  margin-left: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5vh;
+}
+
+.book0ne {
+  grid-column: 1/-1;
+}
+
+.lamp0ne {
+  grid-column: 1/-1;
+}
+
+.secondBook {
+  grid-column: 1/-1;
+}
+
+.poppingBottles {
+  grid-column: 1/-1;
+}
+
+#ruby {
+  display: flex;
+  flex-direction: column;
+}
+
+#copied {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 1rem;
+  margin-left: 7%;
+  margin-top: 5%;
+  gap: 10vh;
+}
+
+#ruby p,
+#findUs a,
+#news p {
+  line-height: 1.6rem;
+}
+
+#ruby p span {
+  color: #323a45;
+}
+
+#contact {
+  margin-left: 30%;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #323a45;
+}
+
+#contact h2 {
+  padding-bottom: 5%;
+}
+
+#news p em {
+  display: block;
+}
+
+#findUs ul {
+  display: block;
+  text-align: right;
+  list-style-type: none;
+  margin-right: 15%;
+}
+
+#findUs a {
+  text-decoration: none;
+  color: #323a45;
+}
+
+/* Footnote */
+
+aside p span::before:not(aside#ruby) {
+  content: " \2022";
+}
+
+footer aside:not(footer > section > aside) {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: #848484;
+  padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 320px) {
+  #items {
+    margin: 0 5%;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  /* Nav & Header */
+
+
+  .backpack0ne {
+    grid-column: 1 /-1;
+    width: 100%;
+  }
+
+  .itemID {
+    font-size: 1rem;
+  }
+
+  .madeBy {
+    font-size: 1rem;
+  }
+
+  footer {
+    position: relative;
+    height: 60vh;
+  }
+
+  #ruby {
+    display: block;
+    position: absolute;
+    top: 1%;
+    width: 50%;
+  }
+
+  #news {
+    display: block;
+    position: absolute;
+    top: 60%;
+  }
+
+  #copied {
+    display: block;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  #ruby p,
+  #findUs a,
+  #news p {
+    line-height: 1rem;
+  }
+
+  #contact {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 10%;
+  }
+
+  #findUs ul {
+    display: block;
+    margin-right: 5%;
+    margin-top: 15%;
+  }
+
+  #findUs a {
+    text-decoration: none;
+    color: #323a45;
+  }
+
+  /* Footnote */
+
+  footer aside:not(footer > section > aside) {
+    position: absolute;
+    top: 94%;
+    right: 25%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #items {
+    margin: 0 5%;
+  }
+
+  #hero #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Nav & Header */
+
+
+  .backpack0ne {
+    grid-column: 1 /-1;
+    width: 100%;
+  }
+
+  .itemID {
+    font-size: 1rem;
+  }
+
+  .madeBy {
+    font-size: 1rem;
+  }
+
+  footer {
+    position: relative;
+    height: 40vh;
+  }
+
+  #ruby {
+    display: block;
+    position: absolute;
+    top: 1%;
+    width: 50%;
+  }
+
+  #news {
+    display: block;
+    position: absolute;
+    top: 60%;
+  }
+
+  #copied {
+    display: block;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  #ruby p,
+  #findUs a,
+  #news p {
+    line-height: 1rem;
+  }
+
+  #contact {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 10%;
+  }
+
+  #findUs ul {
+    display: block;
+    margin-right: 5%;
+    margin-top: 15%;
+  }
+
+  #findUs a {
+    text-decoration: none;
+    color: #323a45;
+  }
+
+  /* Footnote */
+
+  footer aside:not(footer > section > aside) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+    #items {
+        margin: 0 5%;
+    }
+  
+    #hero #logo {
+      font-size: 1rem;
+      position: absolute;
+      left: 75%;
+      top:-1vh;
+    }
+  
+    /* Nav & Header */
+  
+    
+    .backpack0ne {
+      grid-column: 1 /-1;
+      width: 100%;
+    }
+  
+    .itemID {
+      font-size: 1rem;
+    }
+  
+    .madeBy {
+      font-size: 1rem;
+    }
+  
+    footer {
+        position: relative;
+    }
+  
+  #ruby {
+      display: block;
+      position: absolute;
+      top: 1%;
+      width: 50%;
+    }
+  
+    #news {
+      display: block;
+      position: absolute;
+      top: 60%;
+  
+    }
+    
+    #copied {
+      display: block;
+      font-size: 1rem;
+      position: relative;
+    }
+ 
+  
+    /* Footnote */
+    
+  
+    footer aside:not(footer > section > aside) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      font-size: 1rem;
+    }
+}
